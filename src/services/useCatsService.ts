@@ -20,7 +20,6 @@ const useCatsService = (pageNumber: number, limit: number) => {
     let cancel: Canceler;
 
     const API_BASE_URL = "https://api.thecatapi.com/v1/images/search";
-    const limit = 8;
 
     axios({
       method: "GET",
@@ -44,7 +43,7 @@ const useCatsService = (pageNumber: number, limit: number) => {
       });
 
     return () => cancel && cancel();
-  }, [pageNumber]);
+  }, [pageNumber, limit]);
 
   return { cats, hasMore, loading, error };
 };

@@ -48,6 +48,7 @@ const Home: React.FC = () => {
       <InfinityScroll
         render={(pageNumber, lastElementRef) => (
           <ArtsListContainer
+            limit={8}
             pageNumber={pageNumber}
             lastArtworkElementRef={lastElementRef}
           />

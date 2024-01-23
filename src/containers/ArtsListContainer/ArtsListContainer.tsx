@@ -4,14 +4,16 @@ import useArtworksService from "../../services/useArtworksService";
 
 interface ArtListContainerProps {
   pageNumber: number;
+  limit: number;
   lastArtworkElementRef?: any;
 }
 
 const ArtsListContainer = ({
   pageNumber,
+  limit,
   lastArtworkElementRef,
 }: ArtListContainerProps) => {
-  const { artworks, loading, error } = useArtworksService(pageNumber);
+  const { artworks, loading, error } = useArtworksService(pageNumber, limit);
 
   return (
     <div className="artList">
