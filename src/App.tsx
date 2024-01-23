@@ -1,24 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import InfinityScroll from "./components/InfinityScroll/InfinityScroll";
+import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
+import "./App.scss";
+import "./containers/ArtsListContainer";
+import ArtsListContainer from "./containers/ArtsListContainer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header>
+        <h1>Discover Art from Art Institute of Chicago</h1>
+        <h2>- an example of using the InfiniteScroll component</h2>
+        <h3>
+          Art Institute of Chicago API:{" "}
+          <a
+            href="https://api.artic.edu/docs/"
+            aria-label="API docs"
+            target="_blank"
+            rel="noreferrer"
+          >
+            API docs
+          </a>
+        </h3>
+        <h3>
+          Github repo:{" "}
+          <a
+            href="https://github.com/agnieszkastanczuk/infinite-scroll-reactjs"
+            aria-label="code"
+            target="_blank"
+            rel="noreferrer"
+          >
+            code
+          </a>
+        </h3>
+        <p>Scroll to see more</p>
+      </header>{" "}
+      <InfinityScroll
+        render={(pageNumber, lastElementRef) => (
+          <ArtsListContainer
+            pageNumber={pageNumber}
+            lastArtworkElementRef={lastElementRef}
+          />
+        )}
+      />
+      <ScrollToTopButton />
     </div>
   );
 }
