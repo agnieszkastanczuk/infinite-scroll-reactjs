@@ -1,46 +1,62 @@
-# Getting Started with Create React App
+# Infinite Scroll React.js component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple Infinite Scroll component in React. The component's functionality is demonstrated using [the Art Institute of Chicago's API](https://api.artic.edu/docs/).
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+Visit: https://agnieszkastanczuk.github.io/infinite-scroll-reactjs/
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Smooth Scrolling Down: Users can smoothly scroll down the page, triggering in automatic retrievel of new records as needed.
+2. Scrolling Up: Scrolling up allows users to go back to previously fetched pages with records.
+3. Dynamic Updates: If there are changes in the fetched records, the project automatically updates the displayed data.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Technologies
 
-### `npm test`
+- React.js
+- TypeScript
+- axios
+- SCSS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Run the Project
 
-### `npm run build`
+To run the "Infinite Scroll React.js component" project on your local machine, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the Repository:
+   Open your terminal or command prompt.
+   Navigate to the directory where you want to store the project.
+   Run the following command to clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ### git clone <repository_url>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   Replace <repository_url> with the URL of your Git repository.
 
-### `npm run eject`
+2. Install Dependencies:
+   Navigate to the project's root directory.
+   Run the following command to install the required dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+   ### npm install
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   This will install React.js and any other dependencies specified in the package.json file.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. Start the Development Server:
+   After installing dependencies and configuring the API key, you can start the development server by running the following command:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+   ### npm start
 
-## Learn More
+   This will start the React development server, and your app will be available at http://localhost:3000 in your web browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Use the Infinite Scroll:
+   Open your web browser and navigate to http://localhost:3000.
+   You will see the "Infinite-scroll-app" in action. As you scroll down the page, new news articles will be fetched automaticall
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Continued development
+
+This project is part of the recruitment task and I plan to further improve and develop it after the recruitment process.
+
+To do:
+
+1. Search bar implementation
+2. Better design, animations and user experience
+3. Documentation
