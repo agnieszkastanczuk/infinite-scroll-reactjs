@@ -1,6 +1,6 @@
 # Infinite Scroll React.js component
 
-This is a simple Infinite Scroll component in React. The component's functionality is demonstrated using [the Art Institute of Chicago's API](https://api.artic.edu/docs/).
+This is a Infinite Scroll component in React. . The component's functionality is demonstrated using [the Art Institute of Chicago's API](https://api.artic.edu/docs/) and [Cats API](https://developers.thecatapi.com/).
 
 ## Overview
 
@@ -11,6 +11,8 @@ Visit: https://agnieszkastanczuk.github.io/infinite-scroll-reactjs/
 1. Smooth Scrolling Down: Users can smoothly scroll down the page, triggering in automatic retrievel of new records as needed.
 2. Scrolling Up: Scrolling up allows users to go back to previously fetched pages with records.
 3. Dynamic Updates: If there are changes in the fetched records, the project automatically updates the displayed data.
+
+- Multi-API Support: The Infinite Scroll component has been tested with different APIs, including [the Art Institute of Chicago's API](https://api.artic.edu/docs/) and [Cats API](https://developers.thecatapi.com/).
 
 ## Technologies
 
@@ -60,3 +62,4 @@ To do:
 1. Search bar implementation
 2. Better design, animations and user experience
 3. Documentation
+4. Testing

@@ -1,6 +1,6 @@
 import "./ArtsListContainer.scss";
-import ArtCard from "../components/ArtCard/ArtCard";
-import useArtworksService from "../services/useArtworksService";
+import ArtCard from "../../components/ArtCard/ArtCard";
+import useArtworksService from "../../services/useArtworksService";
 
 interface ArtListContainerProps {
   pageNumber: number;
